@@ -1,0 +1,41 @@
+{
+    "name": "wahdam/laravel-sequence",
+    "description": "A description for laravel-sequence.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "wahdam",
+            "email": "wahdam.amarulloh@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wahdam\\LaravelSequence\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wahdam\\LaravelSequence\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wahdam\\LaravelSequence\\LaravelSequenceServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}
